@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navigation from "./_private-components/header/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,30 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{ textAlign: "center" }}>
+        <div className="container mx-auto px-8">
+          <Navigation />
+          <section
+            style={{
+              background: "white",
+              minHeight: "25rem",
+              padding: "3rem",
+              color: "text-black",
+            }}
+          >
+            {children}
+          </section>
+          <footer
+            style={{
+              background: "lightgrey",
+              height: "10rem",
+              padding: "2rem",
+            }}
+          >
+            <h1>MY NEXT JS APP FOOTER</h1>
+          </footer>
+        </div>
+      </body>
     </html>
   );
 }
