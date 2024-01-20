@@ -1,9 +1,3 @@
-export const generateMataData = ({ params }: any) => {
-  return {
-    title: `Blog ${params.id}`,
-    description: `CUSTOM METADATA FOR Blog ${params.id}`,
-  };
-};
 export default function CatchAllSegments({ params }: any) {
   if (params.slug?.length === 2) {
     return (
