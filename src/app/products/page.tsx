@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 
 const generateRandomProductArray = (
@@ -19,7 +19,7 @@ const generateRandomProductArray = (
 
 const ProductList = () => {
   const randomArray = generateRandomProductArray(50, 100, 500);
-  const sortedArray = randomArray.sort((a: number, b: number) => a - b);
+  const sortedArray = randomArray?.sort((a: number, b: number) => a - b);
 
   return (
     <>
@@ -29,11 +29,12 @@ const ProductList = () => {
           <h2 className="text-emerald-700 font-bold mb-5"></h2>
         </div>
         <div className="gap-4 grid-cols-4 grid">
-          {sortedArray.map((val, ind) => (
+          {sortedArray?.map((val, ind) => (
             <div
               key={ind}
               className="px-10 py-40 text-xxl font-bold border-2 border-red-400 text-center"
             >
+              <img src=""></img>
               <Link href={`/products/${val}`}>{`ProductID ${val}`}</Link>
             </div>
           ))}
