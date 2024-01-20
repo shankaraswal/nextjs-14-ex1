@@ -1,4 +1,4 @@
-export const generateDynMataData = ({ params }: any) => {
+export const generateMataData = ({ params }: any) => {
   return {
     title: `Blog ${params.id}`,
     description: `CUSTOM METADATA FOR Blog ${params.id}`,
