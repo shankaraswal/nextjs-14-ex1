@@ -32,10 +32,12 @@ const ProductList = () => {
           {sortedArray?.map((val, ind) => (
             <div
               key={ind}
-              className="px-10 py-40 text-xxl font-bold border-2 border-red-400 text-center"
+              className="text-xxl font-bold border border-teal-300 text-center"
             >
-              <img src=""></img>
-              <Link href={`/products/${val}`}>{`ProductID ${val}`}</Link>
+              <Link
+                href={`/products/${val}`}
+                className="block bg-teal-100 py-40"
+              >{`ProductID ${val}`}</Link>
             </div>
           ))}
         </div>
