@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-export default () => {
+const Comp3 = () => {
   return (
     <>
       <h2 className="mb-4">This is Component 3</h2>
@@ -9,3 +9,5 @@ export default () => {
     </>
   );
 };
+
+export default Comp3;

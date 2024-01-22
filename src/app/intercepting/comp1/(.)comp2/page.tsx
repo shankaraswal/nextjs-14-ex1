@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default () => {
+const InerceptComp2 = () => {
   return (
     <>
       <h2 className="mb-4 text-red-800">
@@ -10,3 +10,5 @@ export default () => {
     </>
   );
 };
+
+export default InerceptComp2;
