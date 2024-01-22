@@ -1,7 +1,7 @@
 import Button from "@/app/_private-components/button/page";
 import Link from "next/link";
 
-export const ProductReviews = ({ params }: any) => {
+const ProductReviews = ({ params }: any) => {
   const topTenReviews = Array.from({ length: 10 });
 
   return (
