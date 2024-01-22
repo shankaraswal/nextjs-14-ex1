@@ -30,6 +30,10 @@ const menuObj = [
     href: "/products",
   },
   {
+    name: "Intercepting",
+    href: "/intercepting/comp1",
+  },
+  {
     name: "User",
     href: "/user-login",
   },

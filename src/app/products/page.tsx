@@ -19,7 +19,7 @@ const generateRandomProductArray = (
 
 const ProductList = () => {
   const randomArray = generateRandomProductArray(50, 100, 500);
-  const sortedArray = randomArray?.sort((a: number, b: number) => a - b);
+  const sortedArray = randomArray?.sort((a: any, b: any) => a - b);
 
   return (
     <>
