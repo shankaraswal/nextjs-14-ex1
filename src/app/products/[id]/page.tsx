@@ -20,10 +20,10 @@ export const generateMetadata = ({ params }: Props): Metadata => {
 };
 
 const ProductDetail = ({ params }: Props) => {
-  // const random = getRandomInt(4);
-  // if (random === 3) {
-  //   throw new Error(`error found in product detail page ${params.id}`);
-  // }
+  const random = getRandomInt(4);
+  if (random === 3) {
+    throw new Error(`error found in product detail page ${params.id}`);
+  }
   return (
     <>
       <h1 className="mb-10 font-bold text-sm text-left">
